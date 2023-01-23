@@ -1,0 +1,93 @@
+// LOS MIXINS SE INCLUYEN USANDO UN @include [nombreArchivo].[nombreMixin]
+
+@mixin normalizarTodo {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+@mixin arreglarImagen{
+    background:{
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    };
+}
+
+@mixin crearFlexbox ($justify,$direction){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin personalConfig {
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&family=Josefin+Sans:wght@100;300;400&display=swap');
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 1.75em;
+    }
+    p{
+        font-size: 1.25em;
+    }
+    .titulo{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .texto{
+        font-family: 'Dosis', sans-serif;
+    }
+}
+
+@mixin personalConfig2 {
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 1.75em;
+    }
+    p{
+        font-size: 1.25em;
+    }
+    .titulo{
+        font-family: 'Raleway', sans-serif;
+    }
+    .texto{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@mixin personalConfig3{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 1.75em;
+    }
+    p{
+        font-size: 1.25em;
+    }
+    .titulo{
+        font-family:'Montserrat', sans-serif;
+    }
+    .texto{
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
