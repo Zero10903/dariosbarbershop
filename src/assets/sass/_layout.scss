@@ -25,7 +25,7 @@
 // Simple grid
 @mixin grid($columns, $gap: 1rem) {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, repeat($columns, 1fr));
+	grid-template-columns: repeat($columns, 1fr);
 	gap: $gap;
 }
 
