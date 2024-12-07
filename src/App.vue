@@ -1,0 +1,36 @@
+<template>
+	<section></section>
+</template>
+
+<script lang="ts" setup></script>
+
+<style lang="scss">
+@use './assets/sass/reset';
+@use './assets/sass/config' as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+	color: $light-color;
+	background-color: $dark-color;
+}
+h1 {
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+h2 {
+	font-size: 1.25rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+h1,
+h2 {
+	padding-bottom: 0.5rem;
+}
+p {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+</style>

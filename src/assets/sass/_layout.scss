@@ -1,0 +1,88 @@
+// Simple flexbox
+@mixin flex($direction, $wrap, $justify, $align, $gap: 0) {
+	display: flex;
+	flex-flow: $direction $wrap;
+	justify-content: $justify;
+	align-items: $align;
+
+	@if $gap != 0 {
+		gap: $gap;
+	}
+}
+
+// Center an element using flexbox
+@mixin flexCenter($direction: row, $gap: 0) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+
+	@if $gap != 0 {
+		gap: $gap;
+	}
+}
+
+// Simple grid
+@mixin grid($columns, $gap: 1rem) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, repeat($columns, 1fr));
+	gap: $gap;
+}
+
+// Center an element using grid
+@mixin gridCenter($gap: 0) {
+	display: grid;
+	place-items: center;
+
+	@if $gap != 0 {
+		gap: $gap;
+	}
+}
+
+// Create an square
+@mixin square($size, $radius: 0) {
+	width: $size;
+	height: $size;
+	border-radius: $radius;
+}
+
+// Rounded corners
+@mixin rounded($radius, $corners: all) {
+	@if $corners == all {
+		border-radius: $radius;
+	} @else {
+		@each $corner in $corners {
+			@if $corner == top-left {
+				border-top-left-radius: $radius;
+			} @else if $corner == top-right {
+				border-top-right-radius: $radius;
+			} @else if $corner == bottom-left {
+				border-bottom-left-radius: $radius;
+			} @else if $corner == bottom-right {
+				border-bottom-right-radius: $radius;
+			}
+		}
+	}
+}
+
+// Backdrop Filters
+@mixin filter($type, $value) {
+	@each $property in $type {
+		backdrop-filter: #{$property }($value);
+		-webkit-backdrop-filter: #{$property }($value);
+	}
+}
+
+// Glass effect using blur
+@mixin glass(
+	$background: #ffffff10,
+	$blur: 12px,
+	$border: none,
+	$shadow: none
+) {
+	backdrop-filter: blur($blur);
+	-webkit-backdrop-filter: blur($blur);
+	background-color: $background;
+	border: $border;
+	box-shadow: $shadow;
+}
