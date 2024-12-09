@@ -51,4 +51,8 @@ p {
 	@include layout.grid(1);
 	place-items: center;
 }
+.accent-color {
+	color: $accent-color;
+	text-shadow: $accent-shadow;
+}
 </style>
