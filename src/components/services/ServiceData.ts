@@ -5,12 +5,12 @@ import type { IServiceData } from './IServiceData';
 const ServiceData: IServiceData[] = [
 	{
 		id: 1,
-		name: 'Corte de adulto',
+		name: 'Corte de cabello (adulto)',
 		price: 5000,
 	},
 	{
 		id: 2,
-		name: 'Corte de niño',
+		name: 'Corte de cabello (niño)',
 		price: 4500,
 	},
 	{
