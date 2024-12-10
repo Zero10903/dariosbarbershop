@@ -1,10 +1,10 @@
 <template>
 	<section class="container">
-		<WelcomeComponent />
-		<ServicesComponent />
-		<PromotionsComponent />
-		<SchedulesComponent />
-		<ContactComponent />
+		<WelcomeComponent class="section" />
+		<ServicesComponent class="section" />
+		<PromotionsComponent class="section" />
+		<SchedulesComponent class="section" />
+		<ContactComponent class="section" />
 	</section>
 </template>
 
@@ -50,6 +50,9 @@ p {
 }
 .accent-color {
 	color: $accent-color;
+}
+.section {
+	max-width: clamp(20rem, 90%, 30rem);
 }
 .card {
 	max-width: 20rem;
