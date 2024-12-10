@@ -2,9 +2,14 @@
 $dark-color: #141414;
 $light-color: #f0f0f0;
 $accent-color: #00ffff;
+$dark-accent-color: #00c9c9;
 
 // SHADOWS
+$dark-shadow: 0.5rem 0.5rem 0.5rem $dark-color;
 $accent-shadow: 0rem 0rem 0.2rem $accent-color;
 
 // BOX
 $rounded: 0.3rem;
+
+// TRANSITIONS
+$transition-time: 0.3s;
