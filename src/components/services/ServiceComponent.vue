@@ -15,6 +15,8 @@
 	position: relative;
 	overflow: hidden;
 
+	filter: drop-shadow($dark-shadow);
+
 	color: $light-color;
 	background-color: $accent-color;
 	@include layout.rounded($rounded, (top-left, bottom-right));

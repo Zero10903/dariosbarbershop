@@ -7,7 +7,7 @@ $accent-color: #0000ff;
 $dark-accent-color: color.adjust($accent-color, $lightness: -20%);
 
 // SHADOWS
-$dark-shadow: 0.5rem 0.5rem 0.5rem $dark-color;
+$dark-shadow: 0.2rem 0.2rem 0.2rem $dark-color;
 $accent-shadow: 0rem 0rem 0.2rem $accent-color;
 
 // BOX

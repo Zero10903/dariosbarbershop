@@ -26,5 +26,8 @@
 		margin: 0.5rem 0rem;
 		@include layout.rounded($rounded);
 	}
+	&__hero {
+		filter: drop-shadow($dark-shadow);
+	}
 }
 </style>
