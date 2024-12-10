@@ -1,5 +1,5 @@
 <template>
-	<section class="service">
+	<section class="service card">
 		<p class="service__text"><slot></slot></p>
 	</section>
 </template>
@@ -11,15 +11,8 @@
 @use '@/assets/sass/config' as *;
 
 .service {
-	padding: 1rem;
 	position: relative;
 	overflow: hidden;
-
-	filter: drop-shadow($dark-shadow);
-
-	color: $light-color;
-	background-color: $accent-color;
-	@include layout.rounded($rounded, (top-left, bottom-right));
 
 	&::after {
 		content: '';
