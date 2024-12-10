@@ -1,6 +1,5 @@
 <template>
 	<section class="services">
-		<!-- TODO: Titulo, corte de adulto, corte de niño, barba y perfilado de cejas -->
 		<h2 class="services__title">Servicios</h2>
 		<img
 			class="services__image"
