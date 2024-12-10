@@ -4,9 +4,6 @@
 			Bienvenido a <span class="accent-color">Dario's Barbershop</span>
 		</h1>
 		<img src="../assets/images/hero.svg" alt="hero" class="welcome__hero" />
-		<p class="welcome__epigraph">
-			Un corte de cabello es más que sólo un corte de cabello.
-		</p>
 		<p class="welcome__description">
 			En <span class="accent-color">Dario's Barbershop</span>, nos esforzamos
 			por crear una experiencia única y relajante para cada uno de nuestros
@@ -26,12 +23,8 @@
 
 .welcome {
 	&__hero {
+		margin: 0.5rem 0rem;
 		@include layout.rounded($rounded);
-	}
-	&__epigraph {
-		font-size: 0.8rem;
-		font-style: italic;
-		margin: 0.1rem 0rem 1rem;
 	}
 }
 </style>
