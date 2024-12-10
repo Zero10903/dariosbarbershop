@@ -2,8 +2,10 @@
 	<footer class="contact card">
 		<h2 class="contact__title">Contáctame</h2>
 		<article class="contact__links">
-			<!-- TODO: Add whatsapp link -->
-			<a href="" class="contact__link" target="_blank">
+			<a
+				href="https://wa.me/qr/BKXVQINWDLBHL1"
+				class="contact__link"
+				target="_blank">
 				<IconComponent>
 					<path
 						fill-rule="evenodd"
