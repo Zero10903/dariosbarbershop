@@ -51,4 +51,12 @@ p {
 .accent-color {
 	color: $accent-color;
 }
+.card {
+	max-width: 20rem;
+	padding: 1rem;
+	color: $light-color;
+	background-color: $accent-color;
+	@include layout.rounded($rounded, (top-left, bottom-right));
+	filter: drop-shadow($dark-shadow);
+}
 </style>

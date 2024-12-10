@@ -12,12 +12,6 @@
 
 .icon {
 	@include layout.square(2rem);
-	filter: drop-shadow($dark-shadow);
-	fill: $accent-color;
-
-	transition: $transition-time fill;
-	&:hover {
-		fill: $dark-accent-color;
-	}
+	fill: $light-color;
 }
 </style>
