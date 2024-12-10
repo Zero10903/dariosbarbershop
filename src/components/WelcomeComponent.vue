@@ -3,7 +3,7 @@
 		<h1 class="welcome__title">
 			Bienvenido a <span class="accent-color">Dario's Barbershop</span>
 		</h1>
-		<img src="../assets/images/hero.jpg" alt="hero" class="welcome__hero" />
+		<img src="../assets/images/hero.svg" alt="hero" class="welcome__hero" />
 		<p class="welcome__epigraph">
 			Un corte de cabello es más que sólo un corte de cabello.
 		</p>

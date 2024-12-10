@@ -15,7 +15,7 @@
 	position: relative;
 	overflow: hidden;
 
-	color: $dark-color;
+	color: $light-color;
 	background-color: $accent-color;
 	@include layout.rounded($rounded, (top-left, bottom-right));
 

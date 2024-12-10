@@ -1,8 +1,10 @@
+@use 'sass:color';
+
 // COLORS
 $dark-color: #141414;
 $light-color: #f0f0f0;
-$accent-color: #00ffff;
-$dark-accent-color: #00c9c9;
+$accent-color: #0000ff;
+$dark-accent-color: color.adjust($accent-color, $lightness: -20%);
 
 // SHADOWS
 $dark-shadow: 0.5rem 0.5rem 0.5rem $dark-color;
