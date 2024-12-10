@@ -33,4 +33,12 @@ import ServiceComponent from '@/components/services/ServiceComponent.vue';
 		@include layout.grid(1, 1rem);
 	}
 }
+
+@media (min-width: $tablet) {
+	.services {
+		&__list {
+			@include layout.grid(2, 1rem);
+		}
+	}
+}
 </style>
