@@ -57,6 +57,7 @@ const toggleDescription = () => {
 
 	&__header {
 		cursor: pointer;
+		width: 100%;
 		position: relative;
 		@include layout.flex(row, nowrap, space-between, center, 1rem);
 	}
@@ -68,12 +69,14 @@ const toggleDescription = () => {
 	}
 	&__description {
 		max-height: 0rem;
+		padding-top: 0rem;
 		position: relative;
 		overflow: hidden;
 
-		transition: $transition-time max-height;
+		transition: $transition-time max-height, $transition-time padding-top;
 		&--active {
 			max-height: 10rem;
+			padding-top: 0.5rem;
 		}
 	}
 }

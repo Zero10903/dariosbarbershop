@@ -39,4 +39,13 @@ import PromoComponent from './promotions/PromoComponent.vue';
 		@include layout.gridCenter(1rem);
 	}
 }
+
+@media (min-width: $tablet) {
+	.promos {
+		&__list {
+			@include layout.grid(3);
+			place-items: start;
+		}
+	}
+}
 </style>
