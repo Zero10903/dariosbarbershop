@@ -4,7 +4,8 @@
 		<img
 			src="../assets/images/schedules.svg"
 			alt="schedules image"
-			class="schedules__image" />
+			class="schedules__image"
+			loading="lazy" />
 		<p>
 			Puedes encontrarnos en
 			<span class="accent-color">Barrio Villa Unión</span>, de
