@@ -19,6 +19,12 @@ const PromoData: IPromoData[] = [
 		description:
 			'Puedes elegir la música que desees escuchar mientras te cortas el cabello.',
 	},
+	{
+		id: 4,
+		name: 'Corte + Barba',
+		description:
+			'Corte de cabello + perfilado de barba (debe ser al mismo cliente): $8.000.',
+	},
 ];
 
 export default PromoData;

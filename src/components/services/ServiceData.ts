@@ -6,12 +6,12 @@ const ServiceData: IServiceData[] = [
 	{
 		id: 1,
 		name: 'Corte de cabello (adulto)',
-		price: 5000,
+		price: 5500,
 	},
 	{
 		id: 2,
 		name: 'Corte de cabello (niño)',
-		price: 4500,
+		price: 5000,
 	},
 	{
 		id: 3,
@@ -21,7 +21,7 @@ const ServiceData: IServiceData[] = [
 	{
 		id: 4,
 		name: 'Perfilado de cejas',
-		price: 3500,
+		price: 3000,
 	},
 ];
 
